@@ -16,28 +16,28 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for?",
+        question : "Commonly used data types DO NOT INCLUDE?",
         //imgSrc : "img/html.png",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        choiceD : "wrongRight answer",
-        correct : "A"
-    },{
-        question : "What does CSS stand for?",
-        //imgSrc : "img/css.png",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
-        choiceD : "Wrong",
+        choiceA : "1.Strings",
+        choiceB : "2.Booleans",
+        choiceC : "3.Alerts",
+        choiceD : "4.Numbers",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "The condition if/else statement is enclosed with __________?",
+        //imgSrc : "img/css.png",
+        choiceA : "commas",
+        choiceB : "curly brackets",
+        choiceC : "parenthiesis",
+        choiceD : "square brackets",
+        correct : "C"
+    },{
+        question : "Arrays in JavaScript can be used to store?",
         //imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
-        choiceD : "Wrong",
+        choiceA : "1. numbers and strings",
+        choiceB : "2. Other Arrays",
+        choiceC : "3. booleans",
+        choiceD : "4. Wrong",
         correct : "C"
     }
 ];
@@ -71,7 +71,7 @@ start.addEventListener("click",startQuiz);
 function startQuiz(){
     start.style.display = "none";
     renderQuestion();
-    quiz.style.display = "block";
+    quiz.style.display = "initial";
     renderProgress();
     renderCounter();
     TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
