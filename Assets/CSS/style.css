@@ -20,12 +20,12 @@ body{
   position: absolute;
   left:100px;
   top:50px;
-  color : lightgrey;
+  color:black;
 }
 
 #start:hover{
-  border: 3px solid lightseagreen;
-  color : lightseagreen;
+  border: 3px solid purple;
+  color : purple;
 }
 
 #question{
