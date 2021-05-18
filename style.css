@@ -1,92 +1,67 @@
-body{
-    font-size: 20px;
-  }
-  
-  #container{
-    margin : 20px auto;
-    background-color: white;
-   
-  }
-  #start{
-    font-size: 1.5em;
-    font-weight: bold;
-    word-break: break-all;
-    width:500px;
-    height:150px;
-    border : ""; 
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    left:100px;
-    top:50px;
-    color:black;
-  }
-  
-  #start:hover{
-    border: 3px solid purple;
-    color : purple;
-  }
-  
-  #question{
-    width:500px;
-    height : 125px;
-    position: center;
-    right:0;
-    top:0;
-  }
-  #question p{
-    margin : 0;
-    padding : 0px;
-    font-size: 1.25em;
-  }
-  
-  #choices{
-    width : 480px;
-    position: center;
-    right : 0;
-    top : 50px;
-    padding : 20px
-  }
-  .choice{
-    width : 135px;
-    background-color: purple;
-    text-align: center;
-    border : 1px solid grey;
-    border-radius: 5px;
-    cursor: pointer;
-    padding : 15px;
-  }
-  .choice:hover{
-    border : 2px solid grey;
-    font-weight: bold;
-  }
-  
-  /* #timer{
-    position: center;
-    height : 100px;
-    width : 200px;
-    bottom : 0px;
-    text-align: right;
-  }
-  #counter{
-    font-size: 3em;
-  } */
-  
-  /* #progress{
-    width : 500px;
-    position: absolute;
-    bottom : 0px;
-    right : 0px;
-    padding:5px;
-    text-align: right;
-  } */
-  /* .prog{
-    width : 25px;
-    height : 25px;
-    border: 1px solid #000;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left : 5px;
-    margin-right : 5px;
-  } */
-  
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    /* Background image CSS from https://web.dev/optimize-css-background-images-with-media-queries/*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* css so footer is at bottom of viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content */
+main {
+    /* css so footer is at bottom of viewport */
+    flex: 1 0 auto;
+}
+
+/* hide sections until they are shown via the click events */
+#questions,
+#final,
+#highscores,
+#yaynay {
+    display: none;  
+  } 
+
+/* Remove bullet points from answers list */
+ul.nobullets {
+list-style-type: none;
+}
+
+/* Answer button styling */
+.ansBtn,
+.ansBtn:hover,
+.ansBtn:active,
+.ansBtn:focus,
+.ansBtn:active:focus {
+    box-shadow: none;
+    outline: none;
+    background-color: #28a745;
+}
+
+/* Media queries for background image from https://web.dev/optimize-css-background-images-with-media-queries/ */
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(../assets/images/markus-spiske-da7AMukpg2k-unsplash-med.jpg);
+   }
+}
