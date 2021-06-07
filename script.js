@@ -8,7 +8,7 @@ let questionEl = document.querySelector("#question");
 
 let questionCount = 0;
 
-const yaynayEl = document.querySelector("#yaynay");
+const flagEl = document.querySelector("#flag");
 
 // section final
 const finalEl = document.querySelector("#final");
@@ -121,10 +121,10 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-    // show section for yaynay and append message
-    yaynayEl.style.display = "block";
+    // show section for flag and append message
+    flagEl.style.display = "block";
     let p = document.createElement("p");
-    yaynayEl.appendChild(p);
+    flagEl.appendChild(p);
 
     // time out after 1 second
     setTimeout(function () {
