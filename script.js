@@ -37,7 +37,7 @@ const ans3Btn = document.querySelector("#answer3");
 const ans4Btn = document.querySelector("#answer4");
 // submit-score
 const submitScrBtn = document.querySelector("#submit-score");
-// goback
+// Go Back
 const goBackBtn = document.querySelector("#goback");
 // clearscores
 const clearScrBtn = document.querySelector("#clearscores");
@@ -45,7 +45,7 @@ const clearScrBtn = document.querySelector("#clearscores");
 const viewScrBtn = document.querySelector("#view-scores");
 
 //Array of Questions
-const questions = [ // array of objects
+const questions = [ 
     {
         // question 0
         question: "Commonly used data types do NOT include:",
@@ -81,7 +81,7 @@ const questions = [ // array of objects
 
 // Functions
 
-// timer
+// Timer
 function setTime() {
     let timerInterval = setInterval(function () {
         secondsLeft--;
